@@ -1,0 +1,10 @@
+#!/bin/sh
+i=`ps aux |awk '{print $3}' |sort -r |head -n 4 |sed -n 2p`
+ while [ $i -gt 5.0 ]
+ do echo "$i"
+ if [ $i -eq 10.0]
+then
+break
+fi
+i=`expr $i + 1`
+ done
