@@ -2,9 +2,9 @@ pipeline {
     agent none
     stages {
         stage('BUild') {
-            options {
+            /*options {
                 skipDefaultCheckout() 
-            }
+            }*/
             steps {
                 echo 'Hello World'
             }
